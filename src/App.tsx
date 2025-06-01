@@ -378,7 +378,7 @@ export default function Portfolio() {
                   alt="AI Chat Assistant"
                   width={400}
                   height={240}
-                  className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -428,7 +428,7 @@ export default function Portfolio() {
                   alt="Security Vulnerability Scanner"
                   width={400}
                   height={240}
-                  className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -482,7 +482,7 @@ export default function Portfolio() {
                   alt="WIP Project"
                   width={400}
                   height={240}
-                  className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -527,7 +527,7 @@ export default function Portfolio() {
                   alt="WIP Project"
                   width={400}
                   height={240}
-                  className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -571,7 +571,7 @@ export default function Portfolio() {
                   alt="WIP Project"
                   width={400}
                   height={240}
-                  className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                 className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -619,7 +619,7 @@ export default function Portfolio() {
                   alt="WIP Project"
                   width={400}
                   height={240}
-                  className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                 className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -673,7 +673,7 @@ export default function Portfolio() {
                   alt="WIP Project"
                   width={400}
                   height={240}
-                  className="h-48 w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
