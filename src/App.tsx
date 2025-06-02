@@ -96,12 +96,12 @@ export default function Portfolio() {
                   <Mail className="mr-2 h-4 w-4" />
                   Get In Touch
                 </Button>
-                <Button variant="outline" asChild>
+                {/* <Button variant="outline" asChild>
                   <a href="#" target="_blank" rel="noopener noreferrer">
                     <Download className="mr-2 h-4 w-4" />
                     Download CV
                   </a>
-                </Button>
+                </Button> */}
               </div>
 
               <div className="flex space-x-4">
@@ -218,7 +218,17 @@ export default function Portfolio() {
                       <CardTitle>Open Source Contributor</CardTitle>
                       <CardDescription>Various GitHub Projects • 2023 - Present</CardDescription>
                     </div>
-                    <Badge variant="outline">Ongoing</Badge>
+                    <div className="flex space-x-2">
+                      <Badge variant="outline">Ongoing</Badge>
+                      <a
+                        href="https://github.com/mgiannopoulos24?tab=repositories&q=&type=fork&language=&sort="
+                        className="text-muted-foreground hover:text-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </div>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -571,7 +581,7 @@ export default function Portfolio() {
                   alt="WIP Project"
                   width={400}
                   height={240}
-                 className="h-56 w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
@@ -619,7 +629,7 @@ export default function Portfolio() {
                   alt="WIP Project"
                   width={400}
                   height={240}
-                 className="h-56 w-full object-cover transition-transform group-hover:scale-105"
+                  className="h-56 w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>
               <CardHeader>
