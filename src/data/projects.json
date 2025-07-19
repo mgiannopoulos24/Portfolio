@@ -1,0 +1,81 @@
+[
+  {
+    "name": "portfolio",
+    "imageKey": "cv",
+    "title": "Personal Portfolio Website",
+    "description": "Responsive portfolio website showcasing my projects and skills.",
+    "tags": ["React", "Vite", "Tailwind CSS", "TypeScript"],
+    "status": "completed",
+    "githubUrl": "https://github.com/mgiannopoulos24/Portfolio",
+    "liveUrl": "https://mgiannopoulos24-portfolio.netlify.app/"
+  },
+  {
+    "name": "attack-defense-ui",
+    "imageKey": "ad",
+    "title": "Attack-Defense CTF Visualization",
+    "description": "Interactive visualization tool for an Attack and Defend competition, built with React, Google Charts and D3.js.",
+    "tags": ["React", "D3.js", "Google Charts", "Vite", "TypeScript"],
+    "status": "completed",
+    "githubUrl": "https://github.com/hackintro/attack-defense-ui",
+    "liveUrl": "https://ctf.hackintro25.di.uoa.gr/"
+  },
+  {
+    "name": "my-studies-web",
+    "imageKey": "v3",
+    "title": "My Studies",
+    "description": "Role-based web application for the management of student services in a university environment.",
+    "tags": ["React", "Vite", "Tailwind CSS", "TypeScript", "Firebase"],
+    "status": "completed",
+    "liveUrl": "https://my-studies-nkua.netlify.app/"
+  },
+  {
+    "name": "my-studies-react-native",
+    "imageKey": "student",
+    "title": "My Studies App (React Native)",
+    "description": "A mobile app based on the My Studies web application, providing a seamless experience for students.",
+    "tags": ["React Native", "TypeScript", "Firebase", "Expo", "Tailwind CSS"],
+    "status": "wip"
+  },
+  {
+    "name": "my-studies-kotlin",
+    "imageKey": "student",
+    "title": "My Studies App (Kotlin)",
+    "description": "Another version of the previously mentioned mobile app, built with native Android technologies.",
+    "tags": ["Kotlin", "Android", "Firebase", "Jetpack Compose", "Material Design"],
+    "status": "wip"
+  },
+  {
+    "name": "course-reviewer",
+    "imageKey": "student",
+    "title": "University Course Reviewer",
+    "description": "Upcoming project about reviewing and rating courses and professors at the University of Athens.",
+    "tags": ["React", "TypeScript", "Tailwind CSS", "SQLite", "Rust", "Docker"],
+    "status": "wip"
+  },
+  {
+    "name": "ais-tracker",
+    "imageKey": "ais",
+    "title": "Real-Time Ship Monitoring",
+    "description": "Upcoming project for real time monitoring of ships and their routes, using AIS data.",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Java",
+      "Spring Boot",
+      "Docker",
+      "Apache Kafka",
+      "WebSocket"
+    ],
+    "status": "wip"
+  },
+  {
+    "name": "professional-network",
+    "imageKey": "student",
+    "title": "Professional Networking App",
+    "description": "Upcoming project similar to LinkedIn, focusing on professional networking and connections.",
+    "tags": ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Java", "Spring Boot", "Docker"],
+    "status": "wip"
+  }
+]
