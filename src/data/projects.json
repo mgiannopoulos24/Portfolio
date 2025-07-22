@@ -77,5 +77,15 @@
     "description": "Upcoming project similar to LinkedIn, focusing on professional networking and connections.",
     "tags": ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Java", "Spring Boot", "Docker"],
     "status": "wip"
+  },
+  {
+    "name": "chronio",
+    "imageKey": "chronio",
+    "title": "Chronio - A Modern Social Media Platform",
+    "description": "Chronio is a social media application where users can connect, share moments, react to each other’s posts, and engage in discussions built with Ruby on Rails, PostgreSQL, and Tailwind CSS.",
+    "tags": ["Ruby", "Ruby on Rails", "PostgreSQL", "Tailwind CSS", "Docker"],
+    "status": "collaborative",
+    "githubUrl": "https://github.com/artemisln/chronio",
+    "liveUrl": "https://chronio.onrender.com/"
   }
 ]

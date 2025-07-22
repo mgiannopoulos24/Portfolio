@@ -1,7 +1,16 @@
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Hammer, Users } from 'lucide-react';
+import React from 'react';
+
+const STATUS_MAP: Record<
+  string,
+  { icon: React.ElementType; label: string; variant: 'destructive' | 'outline' }
+> = {
+  wip: { icon: Hammer, label: 'WIP', variant: 'destructive' },
+  collaborative: { icon: Users, label: 'Collaborative', variant: 'outline' },
+};
 
 interface Project {
   image: string;
@@ -44,11 +53,19 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <CardTitle className="flex items-start justify-between">
             <span className="flex-1">{project.title}</span>
             <div className="ml-2 flex flex-shrink-0 items-center space-x-2">
-              {project.status === 'wip' && (
-                <Badge variant="destructive" className="text-xs">
-                  WIP
+              {/* Status badge */}
+              {project.status && STATUS_MAP[project.status] && (
+                <Badge
+                  variant={STATUS_MAP[project.status].variant}
+                  className="flex items-center gap-1 text-xs"
+                >
+                  {React.createElement(STATUS_MAP[project.status].icon, {
+                    className: 'h-3.5 w-3.5',
+                  })}
+                  {STATUS_MAP[project.status].label}
                 </Badge>
               )}
+              {/* Github and Live links */}
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
