@@ -4,6 +4,7 @@ import cv from '@/assets/cv.png';
 import v3 from '@/assets/mystudies.png';
 import student from '@/assets/student.png';
 import chronio from '@/assets/chronio.png';
+import codingclub from '@/assets/codingclub.png';
 import ProjectCard from '@/components/ProjectCard';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -18,7 +19,8 @@ const imageMap: { [key: string]: string } = {
   cv,
   v3,
   student,
-  chronio
+  chronio,
+  codingclub
 };
 
 export default function Portfolio() {

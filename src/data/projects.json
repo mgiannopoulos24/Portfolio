@@ -68,7 +68,7 @@
       "Apache Kafka",
       "WebSocket"
     ],
-    "status": "wip"
+    "status": "collaborative"
   },
   {
     "name": "professional-network",
@@ -87,5 +87,14 @@
     "status": "collaborative",
     "githubUrl": "https://github.com/artemisln/chronio",
     "liveUrl": "https://chronio.onrender.com/"
+  },
+  {
+    "name": "coding-club",
+    "imageKey": "codingclub",
+    "title": "DIT Coding Club",
+    "description": "A web application for the DIT Coding Club, providing announcements, talks and events, focusing on Game Development, Hackathons, Ethical Hacking, Competitive Programming and Open Source.",
+    "tags": ["React", "TypeScript", "CSS", "Firebase", "Next.js"],
+    "status": "collaborative",
+    "liveUrl": "https://coding-club-web.vercel.app/"
   }
 ]
