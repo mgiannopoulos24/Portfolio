@@ -41,25 +41,25 @@ export default function Portfolio() {
             <div className="hidden space-x-6 md:flex">
               <Button
                 onClick={() => scrollToSection('about')}
-                className="cursor-pointer text-sm transition-colors hover:text-white"
+                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
               >
                 About
               </Button>
               <Button
                 onClick={() => scrollToSection('volunteering')}
-                className="cursor-pointer text-sm transition-colors hover:text-white"
+                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
               >
                 Volunteering
               </Button>
               <Button
                 onClick={() => scrollToSection('skills')}
-                className="cursor-pointer text-sm transition-colors hover:text-white"
+                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
               >
                 Skills
               </Button>
               <Button
                 onClick={() => scrollToSection('projects')}
-                className="cursor-pointer text-sm transition-colors hover:text-white"
+                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
               >
                 Projects
               </Button>
@@ -299,14 +299,30 @@ export default function Portfolio() {
           <h2 className="mb-12 text-center text-3xl font-bold">Featured Projects</h2>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {projectsData.map((projectInfo) => {
-              const project = {
-                ...projectInfo,
-                status: projectInfo.status,
-                image: imageMap[projectInfo.imageKey],
-              };
-              return <ProjectCard key={project.name} project={project} />;
-            })}
+            {projectsData
+              .sort((a, b) => {
+                // Helper function to check if a project has WIP status
+                const hasWip = (status: string | string[] | undefined) => {
+                  if (!status) return false;
+                  return Array.isArray(status) ? status.includes('wip') : status === 'wip';
+                };
+
+                const aHasWip = hasWip(a.status);
+                const bHasWip = hasWip(b.status);
+
+                // Completed projects (non-WIP) come first
+                if (aHasWip && !bHasWip) return 1;
+                if (!aHasWip && bHasWip) return -1;
+                return 0; // Keep original order for projects with same status
+              })
+              .map((projectInfo) => {
+                const project = {
+                  ...projectInfo,
+                  status: projectInfo.status,
+                  image: imageMap[projectInfo.imageKey],
+                };
+                return <ProjectCard key={project.name} project={project} />;
+              })}
           </div>
         </div>
       </section>

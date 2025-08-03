@@ -56,7 +56,7 @@
     "name": "ais-tracker",
     "imageKey": "ais",
     "title": "Real-Time Ship Monitoring",
-    "description": "Upcoming project for real time monitoring of ships and their routes, using AIS data.",
+    "description": "Project for real time monitoring of ships and their routes, using AIS data.",
     "tags": [
       "React",
       "TypeScript",
@@ -68,7 +68,8 @@
       "Apache Kafka",
       "WebSocket"
     ],
-    "status": "collaborative"
+    "status": "collaborative",
+    "githubUrl": "https://github.com/mgiannopoulos24/Software-Engineering"
   },
   {
     "name": "professional-network",
@@ -84,7 +85,7 @@
     "title": "Chronio - A Modern Social Media Platform",
     "description": "Chronio is a social media application where users can connect, share moments, react to each other’s posts, and engage in discussions built with Ruby on Rails, PostgreSQL, and Tailwind CSS.",
     "tags": ["Ruby", "Ruby on Rails", "PostgreSQL", "Tailwind CSS", "Docker"],
-    "status": "collaborative",
+    "status": ["wip", "collaborative"],
     "githubUrl": "https://github.com/artemisln/chronio",
     "liveUrl": "https://chronio.onrender.com/"
   },

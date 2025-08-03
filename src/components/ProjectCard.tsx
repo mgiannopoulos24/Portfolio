@@ -17,7 +17,7 @@ interface Project {
   title: string;
   description: string;
   tags: string[];
-  status?: string;
+  status?: string | string[];
   githubUrl?: string;
   liveUrl?: string;
 }
@@ -31,6 +31,9 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+
+  // Normalize status to always be an array
+  const statuses = Array.isArray(project.status) ? project.status : project.status ? [project.status] : [];
 
   return (
     <motion.div
@@ -53,17 +56,20 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <CardTitle className="flex items-start justify-between">
             <span className="flex-1">{project.title}</span>
             <div className="ml-2 flex flex-shrink-0 items-center space-x-2">
-              {/* Status badge */}
-              {project.status && STATUS_MAP[project.status] && (
-                <Badge
-                  variant={STATUS_MAP[project.status].variant}
-                  className="flex items-center gap-1 text-xs"
-                >
-                  {React.createElement(STATUS_MAP[project.status].icon, {
-                    className: 'h-3.5 w-3.5',
-                  })}
-                  {STATUS_MAP[project.status].label}
-                </Badge>
+              {/* Status badges */}
+              {statuses.map((status) =>
+                STATUS_MAP[status] && (
+                  <Badge
+                    key={status}
+                    variant={STATUS_MAP[status].variant}
+                    className="flex items-center gap-1 text-xs"
+                  >
+                    {React.createElement(STATUS_MAP[status].icon, {
+                      className: 'h-3.5 w-3.5',
+                    })}
+                    {STATUS_MAP[status].label}
+                  </Badge>
+                )
               )}
               {/* Github and Live links */}
               {project.githubUrl && (
