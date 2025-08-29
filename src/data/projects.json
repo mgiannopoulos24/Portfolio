@@ -72,14 +72,6 @@
     "githubUrl": "https://github.com/mgiannopoulos24/Software-Engineering"
   },
   {
-    "name": "professional-network",
-    "imageKey": "student",
-    "title": "Professional Networking App",
-    "description": "Upcoming project similar to LinkedIn, focusing on professional networking and connections.",
-    "tags": ["React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Java", "Spring Boot", "Docker"],
-    "status": "wip"
-  },
-  {
     "name": "chronio",
     "imageKey": "chronio",
     "title": "Chronio - A Modern Social Media Platform",
@@ -97,5 +89,14 @@
     "tags": ["React", "TypeScript", "CSS", "Firebase", "Next.js"],
     "status": "collaborative",
     "liveUrl": "https://coding-club-web.vercel.app/"
+  },
+  {
+    "name": "connectify",
+    "imageKey": "connectify",
+    "title": "Connectify - A LinkedIn Clone",
+    "description": "Connectify is a full-stack, LinkedIn-inspired professional networking application. The platform allows users to create professional profiles, build a network of connections, share articles, post and apply for jobs, and communicate through private messages.",
+    "tags": ["React", "Node.js", "TypeScript", "Elixir", "Phoenix", "Phoenix Channels", "PostgreSQL", "Tailwind CSS", "Docker"],
+    "status": "completed",
+    "githubUrl": "https://github.com/mgiannopoulos24/Connectify"
   }
 ]
