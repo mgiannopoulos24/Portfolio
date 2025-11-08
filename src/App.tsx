@@ -1,11 +1,12 @@
 import ad from '@/assets/a&d.png';
 import ais from '@/assets/ais.png';
-import cv from '@/assets/cv.png';
-import v3 from '@/assets/mystudies.png';
-import student from '@/assets/student.png';
 import chronio from '@/assets/chronio.png';
 import codingclub from '@/assets/codingclub.png';
 import connectify from '@/assets/connectify.png';
+import cv from '@/assets/cv.png';
+import v3 from '@/assets/mystudies.png';
+import student from '@/assets/student.png';
+import technotes from '@/assets/technotes.png';
 import ProjectCard from '@/components/ProjectCard';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -22,7 +23,8 @@ const imageMap: { [key: string]: string } = {
   student,
   chronio,
   codingclub,
-  connectify
+  connectify,
+  technotes,
 };
 
 export default function Portfolio() {
@@ -43,25 +45,25 @@ export default function Portfolio() {
             <div className="hidden space-x-6 md:flex">
               <Button
                 onClick={() => scrollToSection('about')}
-                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
+                className="cursor-pointer text-sm transition-colors hover:border-transparent hover:text-white"
               >
                 About
               </Button>
               <Button
                 onClick={() => scrollToSection('volunteering')}
-                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
+                className="cursor-pointer text-sm transition-colors hover:border-transparent hover:text-white"
               >
                 Volunteering
               </Button>
               <Button
                 onClick={() => scrollToSection('skills')}
-                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
+                className="cursor-pointer text-sm transition-colors hover:border-transparent hover:text-white"
               >
                 Skills
               </Button>
               <Button
                 onClick={() => scrollToSection('projects')}
-                className="cursor-pointer text-sm transition-colors hover:text-white hover:border-transparent"
+                className="cursor-pointer text-sm transition-colors hover:border-transparent hover:text-white"
               >
                 Projects
               </Button>
@@ -153,7 +155,17 @@ export default function Portfolio() {
                       <CardTitle>Translator</CardTitle>
                       <CardDescription>PyGreece • 2024 - Present</CardDescription>
                     </div>
-                    <Badge variant="outline">Ongoing</Badge>
+                    <div className="flex space-x-2">
+                      <Badge variant="outline">Ongoing</Badge>
+                      <a
+                        href="https://github.com/pygreece/python-docs-gr"
+                        className="text-muted-foreground hover:text-primary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </div>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -286,6 +298,7 @@ export default function Portfolio() {
                 <div className="flex flex-wrap justify-center gap-2">
                   <Badge variant="secondary">Prompt Engineering</Badge>
                   <Badge variant="secondary">Automation</Badge>
+                  <Badge variant="secondary">Google Gemini API Integration</Badge>
                 </div>
               </CardContent>
             </Card>

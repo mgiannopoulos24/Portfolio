@@ -95,8 +95,37 @@
     "imageKey": "connectify",
     "title": "Connectify - A LinkedIn Clone",
     "description": "Connectify is a full-stack, LinkedIn-inspired professional networking application. The platform allows users to create professional profiles, build a network of connections, share articles, post and apply for jobs, and communicate through private messages.",
-    "tags": ["React", "Node.js", "TypeScript", "Elixir", "Phoenix", "Phoenix Channels", "PostgreSQL", "Tailwind CSS", "Docker"],
+    "tags": [
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Elixir",
+      "Phoenix",
+      "Phoenix Channels",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Docker"
+    ],
     "status": "completed",
     "githubUrl": "https://github.com/mgiannopoulos24/Connectify"
+  },
+  {
+    "name": "technotesgr",
+    "imageKey": "technotes",
+    "title": "technotesgr",
+    "description": "Technotesgr is a web application for high school students in the 3rd grade of Lyceum, dedicated to providing resources and preparation for the Panhellenic Exams in Informatics, with content focusing on Algorithms, Data Structures, Programming Methodology, and comprehensive analysis of past Exam Questions and Solutions.",
+    "tags": [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "SQLite3",
+      "Google Gemini API Integration",
+      "Python",
+      "FastAPI",
+      "Yarn",
+      "EmailJS"
+    ],
+    "status": "collaborative",
+    "githubUrl": "https://github.com/feirw/technotesgrr"
   }
 ]
