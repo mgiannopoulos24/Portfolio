@@ -5,7 +5,7 @@
     "title": "Personal Portfolio Website",
     "description": "Responsive portfolio website showcasing my projects and skills.",
     "tags": ["React", "Vite", "Tailwind CSS", "TypeScript"],
-    "status": "completed",
+    "status": ["completed"],
     "githubUrl": "https://github.com/mgiannopoulos24/Portfolio",
     "liveUrl": "https://mgiannopoulos24-portfolio.netlify.app/"
   },
@@ -15,17 +15,17 @@
     "title": "Attack-Defense CTF Visualization",
     "description": "Interactive visualization tool for an Attack and Defend competition, built with React, Google Charts and D3.js.",
     "tags": ["React", "D3.js", "Plotly.js", "Vite", "TypeScript"],
-    "status": "completed",
+    "status": ["collaborative"],
     "githubUrl": "https://github.com/hackintro/attack-defense-ui",
     "liveUrl": "https://ctf.hackintro.di.uoa.gr/"
   },
   {
     "name": "my-studies-web",
-    "imageKey": "v3",
+    "imageKey": "mystudies",
     "title": "My Studies",
     "description": "Role-based web application for the management of student services in a university environment.",
     "tags": ["React", "Vite", "Tailwind CSS", "TypeScript", "Firebase"],
-    "status": "completed",
+    "status": ["completed"],
     "liveUrl": "https://my-studies-nkua.netlify.app/"
   },
   {
@@ -34,7 +34,7 @@
     "title": "My Studies App (React Native)",
     "description": "A mobile app based on the My Studies web application, providing a seamless experience for students.",
     "tags": ["React Native", "TypeScript", "Firebase", "Expo", "Tailwind CSS"],
-    "status": "wip"
+    "status": ["wip"]
   },
   {
     "name": "my-studies-kotlin",
@@ -42,7 +42,7 @@
     "title": "My Studies App (Kotlin)",
     "description": "Another version of the previously mentioned mobile app, built with native Android technologies.",
     "tags": ["Kotlin", "Android", "Firebase", "Jetpack Compose", "Material Design"],
-    "status": "wip"
+    "status": ["wip"]
   },
   {
     "name": "course-reviewer",
@@ -50,7 +50,7 @@
     "title": "University Course Reviewer",
     "description": "Upcoming project about reviewing and rating courses and professors at the University of Athens.",
     "tags": ["React", "TypeScript", "Tailwind CSS", "SQLite", "Rust", "Docker"],
-    "status": "wip"
+    "status": ["wip"]
   },
   {
     "name": "ais-tracker",
@@ -68,7 +68,7 @@
       "Apache Kafka",
       "WebSocket"
     ],
-    "status": "collaborative",
+    "status": ["collaborative"],
     "githubUrl": "https://github.com/mgiannopoulos24/Software-Engineering"
   },
   {
@@ -87,8 +87,8 @@
     "title": "DIT Coding Club",
     "description": "A web application for the DIT Coding Club, providing announcements, talks and events, focusing on Game Development, Hackathons, Ethical Hacking, Competitive Programming and Open Source.",
     "tags": ["React", "TypeScript", "CSS", "Firebase", "Next.js"],
-    "status": "collaborative",
-    "liveUrl": "https://coding-club-web.vercel.app/"
+    "status": ["collaborative"],
+    "liveUrl": "https://codingclub.di.uoa.gr/"
   },
   {
     "name": "connectify",
@@ -106,7 +106,7 @@
       "Tailwind CSS",
       "Docker"
     ],
-    "status": "completed",
+    "status": ["completed"],
     "githubUrl": "https://github.com/mgiannopoulos24/Connectify"
   },
   {
@@ -122,10 +122,22 @@
       "Google Gemini API Integration",
       "Python",
       "FastAPI",
-      "Yarn",
       "EmailJS"
     ],
-    "status": "collaborative",
+    "status": ["collaborative"],
     "githubUrl": "https://github.com/feirw/technotesgrr"
+  },
+  {
+    "name": "CodeMirror-Forge",
+    "imageKey": "cmforge",
+    "title": "CodeMirror-Forge",
+    "description": "A WordPress plugin that expands your CodeMirror editor capabilities. Customize themes, fonts, and display options to forge your perfect editing experience.",
+    "tags": [
+      "PHP",
+      "WordPress plugin",
+      "CodeMirror"
+    ],
+    "status": ["wip"],
+    "githubUrl": "https://github.com/mgiannopoulos24/CodeMirror-Forge/"
   }
 ]
